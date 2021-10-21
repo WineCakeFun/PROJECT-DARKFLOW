@@ -8,11 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - DecoretionLayer
   - Water
   - UI
   - 
   - 
+  - Bounds
   - 
   - 
   - 
@@ -25,9 +26,8 @@ TagManager:
   - 
   - 
   - 
-  - Layer 1
-  - Layer 2
-  - Layer 3
+  - 
+  - 
   - 
   - 
   - 
@@ -41,12 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer 1
-    uniqueID: 2425651459
+  - name: Background
+    uniqueID: 1503053993
     locked: 0
-  - name: Layer 2
-    uniqueID: 4250941897
+  - name: Decorative
+    uniqueID: 3519873863
     locked: 0
-  - name: Layer 3
-    uniqueID: 4189426099
+  - name: Player
+    uniqueID: 3460386491
     locked: 0
