@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Follow: {fileID: 1043477088}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 12
-    NearClipPlane: 0.1
+    OrthographicSize: 6
+    NearClipPlane: 0.01
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 711014049}
@@ -175,7 +175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91122876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5697315, y: 4.7054353, z: -10}
+  m_LocalPosition: {x: -3.3116658, y: 3.5634177, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 711014049}
@@ -3864,11 +3864,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3892,7 +3892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972792862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5697315, y: 4.7054353, z: -10}
+  m_LocalPosition: {x: -3.3116658, y: 3.5634177, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3940,6 +3940,7 @@ GameObject:
   - component: {fileID: 1043477084}
   - component: {fileID: 1043477090}
   - component: {fileID: 1043477089}
+  - component: {fileID: 1043477091}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3960,9 +3961,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010000024, y: 0.89}
+  m_Offset: {x: 1.1425258, y: 3.9459395}
   serializedVersion: 2
-  m_Radius: 6.2441874
+  m_Radius: 10.277011
 --- !u!114 &1043477085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3976,6 +3977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 20
+  sprite: {fileID: 1043477087}
 --- !u!50 &1043477086
 Rigidbody2D:
   serializedVersion: 4
@@ -4037,12 +4039,12 @@ SpriteRenderer:
   m_SortingLayerID: -834580805
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b3866e53ce3564140bf374425994b67d, type: 3}
+  m_Sprite: {fileID: 978942612559604503, guid: e6ca36be320803b4d801bb0c7e8c188a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 21.851665, y: 50.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4056,8 +4058,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043477083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5964, y: 4.8512, z: 0}
-  m_LocalScale: {x: 0.124269426, y: 0.124269426, z: 0.124269426}
+  m_LocalPosition: {x: -3.325, y: 3.6363, z: 0}
+  m_LocalScale: {x: 0.09212943, y: 0.08404435, z: 0.08404435}
   m_Children:
   - {fileID: 730076477}
   m_Father: {fileID: 0}
@@ -4172,19 +4174,38 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.34883618, y: -6.744175}
+  m_Offset: {x: 1.0505848, y: -12.551612}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8, y: 26.831526}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 21.851665, y: 50.09}
+    newSize: {x: 21.851665, y: 50.09}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.265118, y: 13.343174}
+  m_Size: {x: 20.169456, y: 24.958048}
   m_EdgeRadius: 0
+--- !u!95 &1043477091
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043477083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f734624a22894684aa545a0ccff890c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1180339748
 GameObject:
   m_ObjectHideFlags: 0
