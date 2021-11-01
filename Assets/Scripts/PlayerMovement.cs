@@ -6,17 +6,15 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private AudioSource audioSrc;
-    private bool facingRight = true;
+	private bool facingRight = true;
     [SerializeField]
     private float speedMultiplier;
-    public SpriteRenderer sprite;
-    private Animator anim;
+	public SpriteRenderer sprite;
 
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         audioSrc = GetComponent<AudioSource>();
-        anim = GetComponent<Animator>();  
     }
 
     void FixedUpdate()
@@ -27,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A))
+		if(Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A))
         {
 			if(facingRight)
 			{
@@ -49,16 +47,14 @@ public class PlayerMovement : MonoBehaviour
 		}
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            anim.SetBool("isRunning", true);
             if (!audioSrc.isPlaying)
             {
                 audioSrc.Play();
             }
-        }else{
-            anim.SetBool("isRunning", false);
         }
     }
-    private void Flip()
+	
+	private void Flip()
 	{
 		facingRight = !facingRight;
         Vector3 Scaler = transform.localScale;
