@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        audioSrc = GetComponent<AudioSource>();
+        //audioSrc = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();  
     }
 
@@ -50,10 +50,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             anim.SetBool("isRunning", true);
-            if (!audioSrc.isPlaying)
+            /*if (!audioSrc.isPlaying)
             {
                 audioSrc.Play();
-            }
+            }*/
         }else{
             anim.SetBool("isRunning", false);
         }
